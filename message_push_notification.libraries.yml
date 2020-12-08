@@ -1,0 +1,7 @@
+push_approval:
+  js:
+    js/message_push_notification.behaviors.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings

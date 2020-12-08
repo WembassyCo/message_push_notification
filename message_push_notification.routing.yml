@@ -1,0 +1,17 @@
+message_push_notificaiton.register_device:
+  path: '/push_notification_register'
+  defaults:
+    _controller: 'Drupal\message_push_notification\Controller\MessagePushNotification::registerDevice'
+    _description: 'registers a new device for push notifications.'
+    _title: 'Push notifications'
+  requirements:
+    _access: 'TRUE'
+
+message_push_notification.settings:
+  path: '/admin/config/message/push_notification'
+  defaults:
+    _form: '\Drupal\message_push_notification\Form\PushNotificationConfig'
+    _description: 'Configuration for push notifications.'
+    _title: 'Push notifications'
+  requirements:
+    _permission: 'administer site configuration'

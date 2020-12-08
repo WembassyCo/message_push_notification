@@ -1,0 +1,4 @@
+services:
+  message_push_notification.push_service:
+    class: Drupal\message_push_notification\PushNotifyService
+    arguments: []  

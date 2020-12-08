@@ -1,0 +1,6 @@
+message_push_notification.settings:
+  title: 'Push Notifications'
+  route_name: message_push_notification.settings
+  parent: message.main_settings
+  description: 'Tools that enhance the user interface.'
+  weight: -11

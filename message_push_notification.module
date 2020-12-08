@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_page_attachments()
+ */
+function message_push_notification_page_attachments_alter(array &$attachments) {
+  $config = \Drupal::config('message_push_notification.settings');
+  $attachments['#attached']['library'][] = 'message_push_notification/push_approval';
+  $attachments['#attached']['drupalSettings']['message_push_notification'] = [
+    'appServerKey' => 'BMBlr6YznhYMX3NgcWIDRxZXs0sh7tCv7_YCsWcww0ZCv9WGg-tRCXfMEHTiBPCksSqeve1twlbmVAZFv7GSuj0',
+    'push_reauth_interval' => $config->get('push_reauth_interval'),
+    'push_enabled' => FALSE,
+    'service_worker' => '/' . drupal_get_path('module', 'message_push_notification') . '/js/serviceWorker.behavior.js'
+  ];
+}

@@ -1,0 +1,8 @@
+name: 'Message Push Notification'
+description: 'Provides Push Notification integration for message notify.'
+core: 8.x
+package: Message
+dependencies:
+  - message
+  - message_notify
+type: module

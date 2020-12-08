@@ -1,0 +1,19 @@
+add push client entities:
+  title: 'Create new Push client entities'
+
+administer push client entities:
+  title: 'Administer Push client entities'
+  description: 'Allow to access the administration form to configure Push client entities.'
+  restrict access: true
+
+delete push client entities:
+  title: 'Delete Push client entities'
+
+edit push client entities:
+  title: 'Edit Push client entities'
+
+view published push client entities:
+  title: 'View published Push client entities'
+
+view unpublished push client entities:
+  title: 'View unpublished Push client entities'
